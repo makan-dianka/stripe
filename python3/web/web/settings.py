@@ -11,6 +11,8 @@ dotenv.load_dotenv(BASE_DIR / os.path.join('.env'))
 SECRET_KEY = 'django-insecure-t6b259@+g$jy_yo0m+^2j!2yq(8&&lst8zjpq@77g8@bpjc(32'
 
 STRIPE_TEST_KEY=os.environ.get("STRIPE_TEST_KEY")
+STRIPE_LIVE_KEY=os.environ.get("STRIPE_LIVE_KEY")
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -36,7 +38,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    # 'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',

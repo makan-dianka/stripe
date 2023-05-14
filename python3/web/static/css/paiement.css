@@ -1,3 +1,7 @@
+.btn-payer{
+  margin-top: 5px;
+}
+
 .StripeElement{
   box-sizing: border-box;
   height: 40px;
