@@ -14,6 +14,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-4 mt-5">
+          {% if card_error %} <p class="text-danger">Le paiement n'a pas pu être abouti</p> {% endif %}
           <form id="payment-form" method="post" action="{% url 'paiement:paiement' %}">{% csrf_token %}
             <input type="hidden" id="input">
             <label for="amount">Prix</label>
