@@ -7,4 +7,5 @@ services:
       - ./python3:/var/www
     ports:
       - 8000:8000
+    command: bash -c "python manage.py runserver"
     tty: true
