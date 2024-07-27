@@ -3,6 +3,7 @@ python3/web/cert.pem
 python3/web/key.pem
 python3/web/db.sqlite3
 python3/web/.env
+python3/web/.venv
 python3/web/web/__pycache__
 
 python3/web/paiement/__pycache__
